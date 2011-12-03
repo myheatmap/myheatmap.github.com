@@ -1,3 +1,6 @@
+---
+title: myHeatmap REST API
+---
 #myHeatmap REST API
 
 The myHeatmap API allows you to create and update maps, sets, and points for geographic data and download customized heat tiles generated from your geographic data.  We are offering a limited beta version while we are tweaking the technology.  If you would like early access, please fill out our <a href='https://docs.google.com/a/russjhammond.com/spreadsheet/viewform?formkey=dFlBLUZrMG4wdWxEZklDc1JRVEVmT0E6MQ'>API questionnaire</a> and we will contact you.
@@ -46,7 +49,7 @@ Each map must contain one or more sets in order to add geographic points to the 
 
 ##3. Create points for a set
 
-Points are required to create a heat map.  Each set can have up to 100,000 points.  You can send a maximum of 10,000 points in each API request.  A point consists of a latitude, a longitude, and a value.  The value represents the density of your data at that particular latitude/longitude point.  You must pass the set\_id in the request URL (replace <set_id> with your set_id in this example)
+Points are required to create a heat map.  Each set can have up to 100,000 points.  You can send a maximum of 10,000 points in each API request.  A point consists of a latitude, a longitude, and a value.  The value represents the density of your data at that particular latitude/longitude point.  You must pass the set\_id in the request URL (replace &lt;set\_id&gt; with your set\_id in this example)
 
 
 ###REQUEST
@@ -93,31 +96,31 @@ The map zoom level is specified by the `z` parameter. Acceptable values range fr
 
 Tiles are rendered using a spherical [Mercator projection](http://en.wikipedia.org/wiki/Mercator_projection). The tile locations are specified by Cartesian coordinates (the `x` and `y` parameters), where the origin is located at the lower left corner of the map. Values for the *x* and *y* coordinates must be in the range [0, *n*). The value of *n* is a power of 2 depending on the zoom level, *z*, i.e., *n* = 2 ^ *z*. Thus, at zoom level 0 the globe is covered by a single tile with *x* = *y* = 0, and at zoom level 1 the globe is covered by a 2 &times; 2 grid of tiles. Here are grid coordinates for a zoom level of 3 (listed as *x*, *y*):
 
-<table style='text-align:center'>
+<table style="text-align:center; width:256px; height:256px; background-image:url('http://tile.openstreetmap.org/0/0/0.png');" border="1" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
-  <td width='64' height='64'>0, 3</td>
-  <td width='64' height='64'>1, 3</td>
-  <td width='64' height='64'>2, 3</td>
-  <td width='64' height='64'>3, 3</td>
+  <td height="64" width="64">0, 3</td>
+  <td height="64" width="64">1, 3</td>
+  <td height="64" width="64">2, 3</td>
+  <td height="64" width="64">3, 3</td>
 </tr>
 <tr>
-  <td width='64' height='64'>0, 2</td>
-  <td width='64' height='64'>1, 2</td>
-  <td width='64' height='64'>2, 2</td>
-  <td width='64' height='64'>3, 2</td>
+  <td height="64" width="64">0, 2</td>
+  <td height="64" width="64">1, 2</td>
+  <td height="64" width="64">2, 2</td>
+  <td height="64" width="64">3, 2</td>
 </tr>
 <tr>
-  <td width='64' height='64'>0, 1</td>
-  <td width='64' height='64'>1, 1</td>
-  <td width='64' height='64'>2, 1</td>
-  <td width='64' height='64'>3, 1</td>
+  <td height="64" width="64">0, 1</td>
+  <td height="64" width="64">1, 1</td>
+  <td height="64" width="64">2, 1</td>
+  <td height="64" width="64">3, 1</td>
 </tr>
 <tr>
-  <td width='64' height='64'>0, 0</td>
-  <td width='64' height='64'>1, 0</td>
-  <td width='64' height='64'>2, 0</td>
-  <td width='64' height='64'>3, 0</td>
+  <td height="64" width="64">0, 0</td>
+  <td height="64" width="64">1, 0</td>
+  <td height="64" width="64">2, 0</td>
+  <td height="64" width="64">3, 0</td>
 </tr>
 </tbody>
 </table>
