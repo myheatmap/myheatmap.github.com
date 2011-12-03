@@ -133,6 +133,10 @@ The `width` parameter controls how "spread out" the heat appears around your dat
 
 The `color_scale` parameter controls how density (or values) are displayed in terms of colors. The scale is set by specifying color stops. Each stop is assigned a color using RGB hex values (as in HTML colors) and a percent at which the color is used. Color stops are separated by a vertical bar (pipe) character. For example, a color scale that is red at zero, green at 50% scale, and blue at 100% scale would be specified as `color_scale=ff0000:0|00ff00:50|0000ff:100` in your http GET request.
 
+### Integration example ###
+
+To view an example integration using OpenLayers and OpenStreetMap, please see our [Gist on GitHub](https://gist.github.com/1427530)
+
 ##5. Updating maps, sets and points
 
 Update requests must use the HTTP PUT method and pass the id of the resource you are updating.  Pass the same JSON data as described in the creation methods.
