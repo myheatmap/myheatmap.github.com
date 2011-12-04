@@ -83,7 +83,7 @@ Points are required to create a heat map.  Each set can have up to 100,000 point
 
 ##4. Get the heat tile for your map set
 
-Heat tiles for a set can be requested by specifying a zoomlevel and x and y coordinates:
+Heat tiles for a set can be requested by specifying a zoom level and x and y coordinates:
 
     GET http://api.myheatmap.com/sets/1/tile/?x=0&y=0&z=0
 
