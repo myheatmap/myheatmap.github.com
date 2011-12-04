@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>myHeatmap API Example -- OpenLayers and OpenStreetMap</title>
+    <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="../lib/OpenLayers.js"></script>
+    <script src="https://s3.amazonaws.com/myheatmap_api/mHm.js"></script>
+    <script src="mhm.js"></script>
+  </head>
+  <body onload="init()">
+    <h1 id="title">myHeatmap Overlay Example</h1>
+    <p>
+      This file should be placed in the examples folder of your OpenLayers
+      distribution. Download the distribution here:
+      <a href="http://openlayers.org/download/OpenLayers-2.11.tar.gz">
+        OpenLayers-2.11.tar.gz
+      </a>
+    </p>
+    <p>
+      You should also have a javascript file called mhm.js in the same
+      directory. For more information, 
+      <a href="https://gist.github.com/1427530">get the Gist</a>.
+    </p>
+    <p>&nbsp;</p>
+    <div id="map" class="smallmap" style="width: 800px; height:480px"></div>
+  </body>
+</html>
