@@ -99,37 +99,37 @@ The map zoom level is specified by the `z` parameter. Acceptable values range fr
 
 Tiles are rendered using a spherical [Mercator projection](http://en.wikipedia.org/wiki/Mercator_projection). The tile locations are specified by Cartesian coordinates (the `x` and `y` parameters), where the origin is located at the lower left corner of the map (i.e., &minus;180, &minus;180 degrees).
 
-* Values for the {% m %}x{% em %} and {% m %}y{% em %} coordinates must be in the range {% m %}\left[ 0, n \right){% em %}. 
-* The value of {% m %}n{% em %} is a power of two depending on the zoom level, {% m %}z{% em %}, that is: {% m %}n = 2^z{% em %}.
+* Values for the <script type='math/tex'>x</script> and <script type='math/tex'>y</script> coordinates must be in the range <script type='math/tex'>\left[ 0, n \right)</script>. 
+* The value of <script type='math/tex'>n</script> is a power of two depending on the zoom level, <script type='math/tex'>z</script>, that is: <script type='math/tex'>n = 2^z</script>.
 
-Thus, at zoom level 0 the globe is covered by a single tile with {% m %}x = y = 0{% em %}, and at zoom level 1 the globe is covered by a 2 &times; 2 grid of tiles. Here are grid coordinates for a zoom level of 2:
+Thus, at zoom level 0 the globe is covered by a single tile with <script type='math/tex'>x = y = 0</script>, and at zoom level 1 the globe is covered by a 2 &times; 2 grid of tiles. Here are grid coordinates for a zoom level of 2:
 
-**Tile coordinates as {% m %}\left( x, y \right){% em %}, for {% m %} z = 2 {% em %}**
+**Tile coordinates as <script type='math/tex'>\left( x, y \right)</script>, for <script type='math/tex'> z = 2 </script>**
 <table style="text-align:center; width:256px; height:256px; background-image:url('/images/0_0_0.png');" border="1" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
-  <td height="64" width="64">{% m %} \left( 0, 3 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 1, 3 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 2, 3 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 3, 3 \right) {% em %}</td>
+  <td height="64" width="64"><script type='math/tex'> \left( 0, 3 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 1, 3 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 2, 3 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 3, 3 \right) </script></td>
 </tr>
 <tr>
-  <td height="64" width="64">{% m %} \left( 0, 2 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 1, 2 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 2, 2 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 3, 2 \right) {% em %}</td>
+  <td height="64" width="64"><script type='math/tex'> \left( 0, 2 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 1, 2 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 2, 2 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 3, 2 \right) </script></td>
 </tr>
 <tr>
-  <td height="64" width="64">{% m %} \left( 0, 1 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 1, 1 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 2, 1 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 3, 1 \right) {% em %}</td>
+  <td height="64" width="64"><script type='math/tex'> \left( 0, 1 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 1, 1 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 2, 1 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 3, 1 \right) </script></td>
 </tr>
 <tr>
-  <td height="64" width="64">{% m %} \left( 0, 0 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 1, 0 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 2, 0 \right) {% em %}</td>
-  <td height="64" width="64">{% m %} \left( 3, 0 \right) {% em %}</td>
+  <td height="64" width="64"><script type='math/tex'> \left( 0, 0 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 1, 0 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 2, 0 \right) </script></td>
+  <td height="64" width="64"><script type='math/tex'> \left( 3, 0 \right) </script></td>
 </tr>
 </tbody>
 </table>
