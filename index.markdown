@@ -6,7 +6,7 @@ layout: default
 
 The myHeatmap API allows you to create and update maps, sets, and points for geographic data and download customized heat tiles generated from your geographic data.  We are offering a limited beta version while we are tweaking the technology.
 
-**If you would like early access, please fill out our <a href='https://docs.google.com/a/russjhammond.com/spreadsheet/viewform?formkey=dFlBLUZrMG4wdWxEZklDc1JRVEVmT0E6MQ'>API questionnaire</a> and we will contact you.**
+**If you would like early access, please fill out our <a href='https://docs.google.com/spreadsheet/viewform?formkey=dEtBS0VKM0tYeW5pemM3cUVDQlM2VEE6MA'>API questionnaire</a> and we will contact you.**
 
 ##How do I use the API?
 
